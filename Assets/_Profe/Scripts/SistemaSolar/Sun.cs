@@ -3,7 +3,7 @@ using UnityEngine;
 /// <summary>
 /// Rotates this component around the given axis
 /// </summary>
-public class SelfRotator : MonoBehaviour
+public class Sun : MonoBehaviour
 {
     [SerializeField] private Vector3 rotationAxis = Vector3.up;
     [SerializeField] private bool randomAxis;
@@ -13,16 +13,16 @@ public class SelfRotator : MonoBehaviour
         rotationAxis = randomAxis ? GetRamdomAxis() : rotationAxis.normalized;
     }
 
-    public void RotateSelf(float speed)
+    public void Update()
     {
-        this.transform.Rotate(rotationAxis , speed * Time.deltaTime, Space.World);
+        this.transform.Rotate(rotationAxis , 1000f * Time.deltaTime, Space.World);
     }
     
     private Vector3 GetRamdomAxis()
     {
         return new Vector3(Random.Range(-0.1f, 0.1f), 
-                           Random.Range(0.9f, 1f), 
-                           Random.Range(-0.1f, 0.1f));
+            Random.Range(0.9f, 1f), 
+            Random.Range(-0.1f, 0.1f));
     }
     
 #if UNITY_EDITOR
