@@ -15,7 +15,7 @@ public class Sun : MonoBehaviour
 
     public void Update()
     {
-        this.transform.Rotate(rotationAxis , 1000f * Time.deltaTime, Space.World);
+        this.transform.Rotate(rotationAxis , 200f * Time.deltaTime, Space.World);
     }
     
     private Vector3 GetRamdomAxis()

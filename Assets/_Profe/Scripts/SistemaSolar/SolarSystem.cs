@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class SolarSystem : MonoBehaviour
 {
@@ -8,11 +10,17 @@ public class SolarSystem : MonoBehaviour
     
     private List<SelfRotator> planetRotators = new List<SelfRotator>();
     
+    // Awake is used best for dependency injection
     private void Awake()
     {
         planetRotators = FindObjectsOfType<SelfRotator>().ToList();
     }
-    
+
+    private void Start()
+    {
+        SetRandomPlanetColor();
+    }
+
     void Update()
     {
         foreach (var planetRotator in planetRotators)
@@ -30,5 +38,13 @@ public class SolarSystem : MonoBehaviour
                                                             * Time.deltaTime);
         }
  
+    }
+    
+    private void SetRandomPlanetColor()
+    {
+        foreach (var planet in planetRotators)
+        {
+            planet.GetComponent<Renderer>().material.color = Random.ColorHSV();
+        }
     }
 }
