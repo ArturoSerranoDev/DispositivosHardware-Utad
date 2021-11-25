@@ -22,7 +22,7 @@ public class SelfRotator : MonoBehaviour
     {
         return new Vector3(Random.Range(-0.1f, 0.1f), 
                            Random.Range(0.9f, 1f), 
-                           Random.Range(-0.1f, 0.1f));
+                           Random.Range(-0.1f, 0.1f)).normalized;
     }
     
 #if UNITY_EDITOR
