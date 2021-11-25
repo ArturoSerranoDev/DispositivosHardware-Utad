@@ -5,12 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/ThirdParty/_Barking_Dog/3D Free Modular Kit/Test_Map 1.unity
-    guid: f034e53b7330b084785ba9bb15485553
+    path: Assets/_Profe/Scenes/Playground.unity
+    guid: b7e8b2537722d3349924553c7045154f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 7d306788983b47345be240eb83474689, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: efdcea5885d65a7458780c2932d49ab8, type: 2}
