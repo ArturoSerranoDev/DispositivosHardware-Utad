@@ -24,7 +24,8 @@ public class SelfRotator : MonoBehaviour
                            Random.Range(0.9f, 1f), 
                            Random.Range(-0.1f, 0.1f)).normalized;
     }
-    
+
+
 #if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
