@@ -129,9 +129,12 @@ PlayerSettings:
     Others: 1
   bundleVersion: 0.1
   preloadedAssets:
-  - {fileID: 11400000, guid: 7d306788983b47345be240eb83474689, type: 2}
   - {fileID: 0}
-  - {fileID: 4412054259560871124, guid: efdcea5885d65a7458780c2932d49ab8, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -150,6 +153,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.DefaultCompany.DispositivosHardware
+    Standalone: com.DefaultCompany.DispositivosHardware
   buildNumber:
     Standalone: 0
     iPhone: 0
